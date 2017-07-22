@@ -10,8 +10,13 @@ A set of ROS publisher/subscribers nodes for benchmarking and testing
 
 # Use
 
-To start all at the same time:
-roslaunch stt_tool_benchmark benchmark.launch
+To start just producers, transformers and producers:
+**roslaunch stt_tool_benchmark benchmark.launch**
+
+To start all and do connection examples through topic_tools
+**roslaunch stt_tool_benchmark connected.launch**
+
+---
 
 To start a producer / consumer / transformer manually:
 rosrun stt_tool_benchmark fahrenheit.py
