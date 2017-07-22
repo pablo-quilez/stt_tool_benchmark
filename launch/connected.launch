@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="stt_tool_benchmark" type="producer_fahrenheit.py" name="producer_fahrenheit" output="screen"/>
+	<node pkg="stt_tool_benchmark" type="consumer_kelvin.py" name="consumer_kelvin" output="screen"/>
+	<node pkg="stt_tool_benchmark" type="transformer_fahrenheit_kelvin.py" name="transformer_fahrenheit_kelvin" output="screen"/>
+	<node pkg="topic_tools" type="relay" args="/producers/temperature/fahrenheit /transformers/input/temperature/fahrenheit" name="relay1"/>
+	<node pkg="topic_tools" type="relay" args="/transformers/output/temperature/kelvin /consumers/temperature/kelvin" name="relay2"/>
+</launch>
