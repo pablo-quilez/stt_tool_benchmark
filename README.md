@@ -1,4 +1,4 @@
-# stt_tool_benchmark
+# stt_tool_benchmark 
 
 A set of ROS publisher/subscribers nodes for benchmarking and testing
 
@@ -7,6 +7,10 @@ A set of ROS publisher/subscribers nodes for benchmarking and testing
 - Producers are nodes which are producing some data
 - Consumers are nodes which requires some data
 - Transformers are republishers which subscribes to a topic, do some transformations and republish into another topic
+
+# Services:
+
+- Services will be added in same way as topics
 
 # Use
 
